@@ -1,0 +1,19 @@
+using gcc : 9 :  g++ : ;
+
+using python
+: 2.7 # version
+: /usr/bin/python # Interpreter/path to dir
+: /usr/include/python2.7 # includes
+: /usr/lib/x86_64-linux-gnu # libs
+: # conditions
+;
+
+using python
+: {{ python3_ver }} # version
+: /usr/bin/python3 # Interpreter/path to dir
+: /usr/include/python{{ python3_path }} # includes
+: /usr/lib/x86_64-linux-gnu # libs
+: # conditions
+;
+
+using mpi ;
