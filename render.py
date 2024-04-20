@@ -19,6 +19,7 @@ print("BOOST_TAR_FILE", BOOST_TAR_FILE)
 python3_vers = {
     "18.04": {"python3_ver": "3.6", "python3_path": "3.6m"},
     "20.04": {"python3_ver": "3.8", "python3_path": "3.8"},
+    "22.04": {"python3_ver": "3.10", "python3_path": "3.10"},
 }
 
 build_args = dict(BOOST_TAR_FILE=BOOST_TAR_FILE,

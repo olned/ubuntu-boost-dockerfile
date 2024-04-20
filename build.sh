@@ -30,7 +30,7 @@ BOOST_TAR_FILE="boost_${BOOST_SUBSTR}.tar.gz"
 
 if [ ! -f $BOOST_TAR_FILE ]; then
    echo "File $BOOST_TAR_FILE does not exists. Downloding ..."
-   BOOST_TAR_FILE_URI="https://dl.bintray.com/boostorg/release/${BOOST_VERSION}/source/${BOOST_TAR_FILE}"
+   BOOST_TAR_FILE_URI="https://boostorg.jfrog.io/artifactory/main/release/${BOOST_VERSION}/source/${BOOST_TAR_FILE}"
    wget ${BOOST_TAR_FILE_URI}
 fi
 
